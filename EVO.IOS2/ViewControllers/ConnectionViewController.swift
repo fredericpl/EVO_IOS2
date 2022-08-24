@@ -31,7 +31,14 @@ class ConnectionViewController: UIViewController {
 
     @IBAction func connectionAction(_ sender: Any) {
         //MARK: missing  "@" input valid check in
-        if let login = loginInput.text, let pass = passwordInput.text, !login.contains("@") && pass.isEmpty && login.isEmpty  {
+        
+        let predicate = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+
+        let login = loginInput.text
+        let password = passwordInput.text!
+        
+        if !predicate.evaluate(with: login) || password.isEmpty {
+       // if let login = loginInput.text, let pass = passwordInput.text, !login.contains("@") && pass.isEmpty && login.isEmpty  {
             
             let alert = UIAlertController(title: "Error", message: "Login and/or email invalid", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "non", style: .cancel))

@@ -34,10 +34,21 @@ class PokemonPickerViewController: UIViewController {
         backGroundImage.backgroundColor = colors[0].color
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            let bgColor = UIColor(named: "BGColor")
+
+            // change nav bar appearance
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = bgColor
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
     
     
     @IBAction func moreInfoAction(_ sender: Any) {
-        if let url = URL(string: "https://www.pokemon.com/us/") {
+        if let url = URL(string: NSLocalizedString("pokemon_link", comment: "")) {
             let vc = SFSafariViewController(url: url)
             present(vc, animated: true)
         }
@@ -54,18 +65,6 @@ class PokemonPickerViewController: UIViewController {
 
     }
     
- 
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

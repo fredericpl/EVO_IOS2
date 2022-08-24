@@ -12,18 +12,14 @@ class PokemonCell: UITableViewCell {
     @IBOutlet var pokeImg: UIImageView!
     @IBOutlet var pokeName: UILabel! 
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+   
 
-    func setup() {
 
-        func setup(pokemon: Pokemon, color: UIColor) {
+        func setup(pokemon: Pokemon) {
             pokeImg.image = UIImage(named: pokemon.name)
             pokeName.text = pokemon.name
             
         }
     }
     
-}
+

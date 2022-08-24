@@ -14,6 +14,7 @@ enum PokemonType {
     case water
     case steel
     case ice
+    case grass
     
     var title: String {
         switch self {
@@ -25,6 +26,8 @@ enum PokemonType {
             return "steel"
         case .ice:
             return "ice"
+        case .grass:
+            return "grass"
         }
     }
     
@@ -38,6 +41,8 @@ enum PokemonType {
             return .gray
         case .ice:
             return .cyan
+        case .grass:
+            return .green
         }
     }
 }

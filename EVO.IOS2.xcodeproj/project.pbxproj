@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064FE03128B60079008604E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 064FE03328B60079008604E1 /* Localizable.strings */; };
+		064FE03828B604CF008604E1 /* PokemonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064FE03728B604CF008604E1 /* PokemonHeader.swift */; };
+		064FE03A28B604DF008604E1 /* PokemonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064FE03928B604DF008604E1 /* PokemonHeader.xib */; };
 		06BDD4CC28B4D6D60002F003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD4CB28B4D6D60002F003 /* AppDelegate.swift */; };
 		06BDD4CE28B4D6D60002F003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD4CD28B4D6D60002F003 /* SceneDelegate.swift */; };
 		06BDD4D028B4D6D60002F003 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BDD4CF28B4D6D60002F003 /* LaunchViewController.swift */; };
@@ -26,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064FE03228B60079008604E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		064FE03428B6008E008604E1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		064FE03728B604CF008604E1 /* PokemonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonHeader.swift; sourceTree = "<group>"; };
+		064FE03928B604DF008604E1 /* PokemonHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonHeader.xib; sourceTree = "<group>"; };
 		06BDD4C828B4D6D60002F003 /* EVO.IOS2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVO.IOS2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BDD4CB28B4D6D60002F003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06BDD4CD28B4D6D60002F003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 				06BDD4D428B4D6D80002F003 /* Assets.xcassets */,
 				06BDD4D628B4D6D80002F003 /* LaunchScreen.storyboard */,
 				06BDD4D928B4D6D80002F003 /* Info.plist */,
+				064FE03328B60079008604E1 /* Localizable.strings */,
 			);
 			path = EVO.IOS2;
 			sourceTree = "<group>";
@@ -117,6 +125,8 @@
 			children = (
 				06BDD4E828B4FD320002F003 /* PokemonCell.swift */,
 				06BDD4E928B4FD320002F003 /* PokemonCell.xib */,
+				064FE03728B604CF008604E1 /* PokemonHeader.swift */,
+				064FE03928B604DF008604E1 /* PokemonHeader.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +173,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 06BDD4BF28B4D6D60002F003;
 			productRefGroup = 06BDD4C928B4D6D60002F003 /* Products */;
@@ -179,9 +190,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064FE03128B60079008604E1 /* Localizable.strings in Resources */,
 				06BDD4D828B4D6D80002F003 /* LaunchScreen.storyboard in Resources */,
 				06BDD4EB28B4FD320002F003 /* PokemonCell.xib in Resources */,
 				06BDD4D528B4D6D80002F003 /* Assets.xcassets in Resources */,
+				064FE03A28B604DF008604E1 /* PokemonHeader.xib in Resources */,
 				06BDD4D328B4D6D60002F003 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BDD4D028B4D6D60002F003 /* LaunchViewController.swift in Sources */,
+				064FE03828B604CF008604E1 /* PokemonHeader.swift in Sources */,
 				06BDD4CC28B4D6D60002F003 /* AppDelegate.swift in Sources */,
 				06BDD4E528B4F2950002F003 /* ConnectionViewController.swift in Sources */,
 				06BDD4CE28B4D6D60002F003 /* SceneDelegate.swift in Sources */,
@@ -211,6 +225,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		064FE03328B60079008604E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064FE03228B60079008604E1 /* en */,
+				064FE03428B6008E008604E1 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		06BDD4D128B4D6D60002F003 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -234,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -294,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

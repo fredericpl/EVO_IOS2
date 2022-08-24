@@ -152,8 +152,8 @@
                                     <constraint firstItem="sK0-Ai-hiE" firstAttribute="leading" secondItem="A7w-Pl-Vs3" secondAttribute="leading" id="yTE-PL-YwN"/>
                                 </constraints>
                             </view>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avg-YU-A73">
-                                <rect key="frame" x="0.0" y="88" width="414" height="264"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avg-YU-A73">
+                                <rect key="frame" x="0.0" y="88" width="414" height="216"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cq5-HN-Nqr"/>
@@ -204,6 +204,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bDr-9b-dF6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="1" green="0.8862745098" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Kec-LE-71h" firstAttribute="top" secondItem="bDr-9b-dF6" secondAttribute="top" id="Hku-5I-tiX"/>
                             <constraint firstItem="3Ze-Op-Hua" firstAttribute="centerY" secondItem="9Lr-wO-gPA" secondAttribute="centerY" id="LTa-qb-egR"/>
@@ -255,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="NvM-YE-k3v">
-                                <rect key="frame" x="20" y="641" width="324" height="112"/>
+                                <rect key="frame" x="20" y="604" width="324" height="112"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMs-Mi-rpa">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="30"/>
@@ -289,8 +290,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yq2-0a-2fP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="1" green="0.8862745098" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yq2-0a-2fP" firstAttribute="bottom" secondItem="NvM-YE-k3v" secondAttribute="bottom" constant="109" id="0wB-ju-1QT"/>
+                            <constraint firstItem="NvM-YE-k3v" firstAttribute="top" secondItem="8hC-9P-eRY" secondAttribute="bottom" constant="40" id="5s8-g2-qwH"/>
                             <constraint firstItem="RUb-Cz-483" firstAttribute="leading" secondItem="yq2-0a-2fP" secondAttribute="leading" id="9e6-bM-plf"/>
                             <constraint firstItem="yq2-0a-2fP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S1K-am-dUD" secondAttribute="trailing" symbolic="YES" id="AGc-Sk-Jcj"/>
                             <constraint firstItem="S1K-am-dUD" firstAttribute="top" secondItem="RUb-Cz-483" secondAttribute="bottom" constant="10" id="BpQ-Ze-fzw"/>
